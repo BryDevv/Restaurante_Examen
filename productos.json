@@ -1,0 +1,114 @@
+[
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Gallo",
+    "Codigo": "B001",
+    "Preciobase": 15.0,
+    "TipoBebida": "cerveza",
+    "Volumen": "12oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Gallo",
+    "Codigo": "B002",
+    "Preciobase": 20.0,
+    "TipoBebida": "cerveza",
+    "Volumen": "16oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Cabro",
+    "Codigo": "B007",
+    "Preciobase": 18.0,
+    "TipoBebida": "cerveza",
+    "Volumen": "12oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Cabro",
+    "Codigo": "B008",
+    "Preciobase": 25.0,
+    "TipoBebida": "cerveza",
+    "Volumen": "16oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Salvavidas",
+    "Codigo": "B003",
+    "Preciobase": 5.0,
+    "TipoBebida": "agua",
+    "Volumen": "12oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Salvavidas",
+    "Codigo": "B004",
+    "Preciobase": 7.0,
+    "TipoBebida": "agua",
+    "Volumen": "16oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Tic Tac",
+    "Codigo": "B005",
+    "Preciobase": 6.0,
+    "TipoBebida": "refresco",
+    "Volumen": "12oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Tic Tac",
+    "Codigo": "B006",
+    "Preciobase": 8.0,
+    "TipoBebida": "refresco",
+    "Volumen": "16oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Raptor",
+    "Codigo": "B009",
+    "Preciobase": 10.0,
+    "TipoBebida": "refresco",
+    "Volumen": "12oz"
+  },
+  {
+    "Categoria": "Bebida",
+    "Nombre": "Raptor",
+    "Codigo": "B010",
+    "Preciobase": 12.0,
+    "TipoBebida": "refresco",
+    "Volumen": "16oz"
+  },
+  {
+    "Categoria": "Plato fuerte",
+    "Nombre": "Carne Asada",
+    "Codigo": "P001",
+    "Preciobase": 45.0,
+    "TipoCarne": "Res",
+    "Acompañamiento": "Chirmol"
+  },
+  {
+    "Categoria": "Plato fuerte",
+    "Nombre": "Pollo Frito",
+    "Codigo": "P002",
+    "Preciobase": 35.0,
+    "TipoCarne": "Pollo",
+    "Acompañamiento": "Papas"
+  },
+  {
+    "Categoria": "Postre",
+    "Nombre": "Helado",
+    "Codigo": "D001",
+    "Preciobase": 12.0,
+    "EsDulce": true,
+    "Porcion": "Grande"
+  },
+  {
+    "Categoria": "Postre",
+    "Nombre": "Pastel",
+    "Codigo": "D002",
+    "Preciobase": 15.0,
+    "EsDulce": true,
+    "Porcion": "Mediano"
+  }
+]
