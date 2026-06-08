@@ -268,27 +268,41 @@ namespace Restaurante_Examen
             P_platofuerte.Visible = false;
             Postre.Visible = false;
 
+            // Población de ComboBoxes del Menú con opciones estándar + datos cargados
             tipobebida.Items.Clear();
-            tipobebida.Items.AddRange(listaBebidas.Select(b => b.TipoBebida).Distinct().ToArray());
+            var tiposBebidaBase = new string[] { "Agua", "Refresco", "Cerveza" };
+            var tiposBebidaCargados = listaBebidas.Select(b => b.TipoBebida).Distinct();
+            tipobebida.Items.AddRange(tiposBebidaBase.Union(tiposBebidaCargados, StringComparer.OrdinalIgnoreCase).ToArray());
 
             presentacionml.Items.Clear();
-            presentacionml.Items.AddRange(listaBebidas.Select(b => b.Volumen).Distinct().ToArray());
+            var volBase = new string[] { "12oz", "16oz", "600ml", "1L" };
+            var volCargados = listaBebidas.Select(b => b.Volumen).Distinct();
+            presentacionml.Items.AddRange(volBase.Union(volCargados, StringComparer.OrdinalIgnoreCase).ToArray());
 
             tipocarne.Items.Clear();
-            tipocarne.Items.AddRange(listaPlatos.Select(p => p.TipoCarne).Distinct().ToArray());
+            var carneBase = new string[] { "Res", "Pollo", "Cerdo", "Mixto" };
+            var carneCargados = listaPlatos.Select(p => p.TipoCarne).Distinct();
+            tipocarne.Items.AddRange(carneBase.Union(carneCargados, StringComparer.OrdinalIgnoreCase).ToArray());
 
             acopañamiento.Items.Clear();
-            acopañamiento.Items.AddRange(listaPlatos.Select(p => p.Acompañamiento).Distinct().ToArray());
+            var acoBase = new string[] { "Papas", "Chirmol", "Ensalada", "Arroz" };
+            var acoCargados = listaPlatos.Select(p => p.Acompañamiento).Distinct();
+            acopañamiento.Items.AddRange(acoBase.Union(acoCargados, StringComparer.OrdinalIgnoreCase).ToArray());
 
             tipopostre.Items.Clear();
-            tipopostre.Items.AddRange(listaPostres.Select(p => p.Nombre).Distinct().ToArray());
+            var postresCargados = listaPostres.Select(p => p.Nombre).Distinct();
+            tipopostre.Items.AddRange(postresCargados.ToArray());
+            if (tipopostre.Items.Count == 0) tipopostre.Items.AddRange(new string[] { "Helado", "Pastel", "Flan" });
 
             azucar.Items.Clear();
             azucar.Items.AddRange(new object[] { "Sí", "No" });
 
             presentacion_postre.Items.Clear();
-            presentacion_postre.Items.AddRange(listaPostres.Select(p => p.Porcion).Distinct().ToArray());
+            var porcionBase = new string[] { "Pequeño", "Mediano", "Grande", "Personal" };
+            var porcionCargada = listaPostres.Select(p => p.Porcion).Distinct();
+            presentacion_postre.Items.AddRange(porcionBase.Union(porcionCargada, StringComparer.OrdinalIgnoreCase).ToArray());
 
+            // Seleccionar primeros elementos por defecto
             if (menu.Items.Count > 0) menu.SelectedIndex = 0;
             if (tipobebida.Items.Count > 0) tipobebida.SelectedIndex = 0;
             if (presentacionml.Items.Count > 0) presentacionml.SelectedIndex = 0;
