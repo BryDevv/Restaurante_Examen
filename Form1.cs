@@ -16,5 +16,20 @@ namespace Restaurante_Examen
         {
 
         }
+
+        private void P_bebida_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void preciocarne_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
